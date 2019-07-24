@@ -1,22 +1,16 @@
+
 T = int(input())
 
 for index in range(1, T+1):
-    data = list(str(input()))
-    temp = []
-    temp2 = []
-    temp3 =[]
-    count = 0
-    for dat_  in data:
+    data = list(input())
+    temp = []  
+    for dat_  in data[0:15]:
         if dat_ not in temp:
-            temp.append(dat_)
+            temp.append(dat_)  
+            if temp == data[len(temp):len(temp*2)]: 
+                break
         else:
-        
-            temp2.append(dat_)
-            temp3.append(''.join(temp))
-            temp.clear()
+            if temp == data[len(temp):len(temp*2)]:         
+                break										
             temp.append(dat_)
-            print(temp, temp2, temp3)
-            if ''.join(temp2) in temp3:
-                count+= 1
-                temp2 =[]
-    print(count)
+    print('#{} {}'.format(index, len(temp)))
