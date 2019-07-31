@@ -77,6 +77,8 @@ for test_case in range(1, T + 1):
 8. [중간 평균값 구하기](./level2/8.py)  list.count(),  list.remove()  round(num, num)
 9. [조교의 성적 매기기](./level2/9.py)  
 10. [어디에 단어가 들어갈 수 있을까](./level2/10.py)  
+11. [시각 덧셈](./level2/11.py)  
+12. [스도쿠 검증](./level2/12.py)  
 
 
 
