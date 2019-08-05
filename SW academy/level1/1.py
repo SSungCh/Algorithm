@@ -4,4 +4,4 @@ for test_case in range(1, T + 1):
     n = input()
     data = list(map(int,input().split(' ')))
     result = max(data) - min(data)
-    print('#{} '.format(test_case)+result)3
+    print('#{} '.format(test_case)+result)
